@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Increment Counter</title>
-</head>
-<body>
+let count = 0;
 
-    <p id="counter">0</p>
+document.getElementById("incrementBtn").addEventListener("click", function () {
 
-    <button id="incrementBtn">Increment</button>
+    alert(count);
 
-    <script>
-        let count = 0;
+    count++;
 
-        document.getElementById("incrementBtn").addEventListener("click", function () {
-
-            alert(count);
-
-            count++;
-
-            document.getElementById("counter").innerText = count;
-        });
-    </script>
-
-</body>
-</html>
+    document.getElementById("counter").innerText = count;
+});
